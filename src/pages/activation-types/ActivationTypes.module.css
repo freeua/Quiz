@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+}
+
+.wrapper > div {
+  margin-bottom: 4rem;
+  width: 33.33%;
+}
+
+.wrapperPage {
+  width: 100%;
+  padding-bottom: 10rem;
+}
+
+.exit {
+  margin-left: auto;
+  width: fit-content;
+}
+
+@media screen and (max-width: 1230px) {
+  .wrapperPage {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper > div {
+    margin-bottom: 2.5rem;
+    width: 50%;
+  }
+
+  .wrapperPage {
+    width: 100%;
+  }
+}

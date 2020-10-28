@@ -1,0 +1,118 @@
+.finishContentWrapper {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.placeholderImage {
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+}
+
+.finishContentWrapper > p {
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: center;
+  max-width: 78%;
+  margin-top: 30px;
+}
+
+.marginBottom {
+  margin-bottom: 20px;
+}
+.container {
+  width: 100%;
+}
+
+.container > div {
+  margin: 5px;
+}
+
+.container > div > label {
+  width: 100px;
+}
+
+.form {
+  width: 60%;
+}
+
+.checkboxWrapper {
+  padding-left: 110px;
+  margin: 10px 0 !important;
+}
+
+.submit {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 100px;
+}
+
+.hero {
+  height: 250px;
+  padding-left: 23%;
+}
+
+.heroTitle {
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 13%;
+  left: 35%;
+  font-size: 1.8rem;
+}
+
+.heroWrapper {
+  position: relative;
+}
+
+@media screen and (max-width: 650px) {
+  .finishContentWrapper {
+    margin-bottom: 105px;
+    width: 100%;
+    margin-top: -40px;
+  }
+
+  .hero {
+    height: 183px;
+    padding-left: 33%;
+  }
+
+  .heroTitle {
+    left: 32%;
+  }
+
+  .finishContentWrapper > p {
+    font-size: 1.6rem;
+    max-width: 100%;
+    margin-top: 15px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .checkboxWrapper {
+    padding-left: 0;
+    margin: 10px 0 !important;
+  }
+  .submit {
+    width: 8rem;
+  }
+  .submit > button {
+    min-width: 8rem;
+    min-height: 8rem;
+  }
+  .submit > button > div {
+    font-size: 1rem;
+  }
+  .heroWrapper {
+    width: 100%;
+  }
+  .hero {
+    padding-left: 20%;
+  }
+}

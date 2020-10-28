@@ -1,0 +1,38 @@
+.button {
+  display: inline-block;
+  background-image: url("../../../static/images/hexagon130px.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-width: 10rem;
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: all 200ms ease;
+  text-decoration: none;
+  outline: none;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.button:disabled:hover {
+  transform: none;
+}
+
+.button:hover {
+  text-shadow: 1px 2px 3px #00000060;
+}
+
+.text {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 0 1rem;
+}

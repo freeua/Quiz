@@ -1,0 +1,93 @@
+.wrapper {
+  min-width: 20rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  background-image: url("../../static/images/Submit-Button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.image {
+  max-width: 10rem;
+  width: 100%;
+  max-height: 10rem;
+  height: 100%;
+  object-fit: contain;
+  padding-left: 3%;
+  object-position: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.desc {
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+}
+
+.desc > p {
+  max-width: 100%;
+  margin-top: 0;
+  color: black;
+}
+@media screen and (max-width: 900px) {
+  .wrapper {
+    min-width: 15rem;
+  }
+
+  .card {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .image {
+    max-width: 7rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .desc {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrapper {
+    min-width: 10rem;
+  }
+
+  .card {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .image {
+    max-width: 5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

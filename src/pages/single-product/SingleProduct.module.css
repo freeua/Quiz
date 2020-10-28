@@ -1,0 +1,163 @@
+table {
+  width: 100%;
+  min-width: 663px;
+  border: 1px solid #fff;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+th {
+  vertical-align: middle;
+}
+
+td {
+  background-color: #f26522;
+  padding: 10px;
+  vertical-align: top;
+}
+
+td > p {
+  padding: 10px 0;
+}
+
+.name,
+.howTom,
+.ingredients {
+  width: 20%;
+}
+
+.overview {
+  width: 16%;
+}
+
+.age {
+  width: 9%;
+}
+.container {
+  width: 100%;
+}
+
+.container > div {
+  margin: 5px 0;
+}
+
+.container > div > label {
+  width: 100px;
+}
+
+.form {
+  width: 60%;
+  margin-left: 3%;
+  margin-bottom: 10rem;
+}
+
+.checkboxWrapper {
+  padding-left: 110px;
+  margin: 10px 0 !important;
+}
+
+.submit {
+  position: absolute;
+  right: 48px;
+  bottom: 20px;
+  width: 200px;
+  display: flex;
+}
+
+.submit > a > button > div,
+.submit > button > div {
+  font-size: 1rem;
+}
+.submit > a > button,
+.submit > button {
+  background-position: center;
+  min-width: 8rem;
+  min-height: 8rem;
+}
+
+.submit > a,
+.submit > button {
+  margin: 0 10px;
+}
+
+.complete {
+  margin: 40px 0 30px 50px;
+  margin-left: 6%;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.thankyouWrapper {
+}
+
+.wrapper {
+  max-width: 100%;
+  overflow-x: visible;
+}
+
+.singleProductWrapper {
+  width: 100%;
+}
+
+.thankyouWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thankyouText {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.linksWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.linksWrapper > *:first-child {
+  margin-right: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .form {
+    width: 80%;
+  }
+
+  .checkboxWrapper {
+    padding-left: 0;
+    margin: 10px 0 !important;
+  }
+  .submit {
+    width: 20rem;
+  }
+  .submit > button,
+  .submit > a {
+    min-width: 8rem;
+    min-height: 8rem;
+  }
+  .submit > button > div,
+  .submit > a > button > div {
+    font-size: 1rem;
+  }
+  .singleProductWrapper > p {
+    font-size: 1.2rem;
+  }
+  .singleProductWrapper {
+    margin-bottom: 75px;
+  }
+  .wrapper {
+    overflow-x: scroll;
+  }
+}

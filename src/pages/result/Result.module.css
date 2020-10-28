@@ -1,0 +1,155 @@
+.contentWrapper {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -4rem;
+}
+
+.productImage {
+  max-height: 150px;
+  min-height: 100px;
+  height: 20vw;
+}
+
+.contentWrapper > p {
+  margin: 0;
+  max-width: 86%;
+  color: #fff;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.buttons > a {
+  min-height: 13rem;
+  min-width: 13rem;
+  font-size: 1.5rem;
+}
+
+.buttons > button,
+.buttons > a {
+  width: 100px;
+}
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  width: 90%;
+  margin-bottom: 4rem;
+}
+.productDescription > p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.funFact {
+  margin: 10px 0 0 10px;
+  font-size: 16px !important;
+  color: #fff;
+  text-align: center;
+}
+
+.exit {
+  margin-left: auto;
+}
+
+.congratzWrapper {
+  padding-left: 23%;
+}
+
+.hero {
+  height: 250px;
+}
+
+.heroTitle {
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 13%;
+  left: 45px;
+  font-size: 1.4rem;
+}
+
+.heroWrapper {
+  position: relative;
+}
+
+.actions {
+  max-width: 85%;
+  margin-right: auto;
+}
+
+.desc {
+  text-align: left !important;
+}
+
+.buttons > button > div,
+.buttons > a > div {
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+  .contentWrapper > p {
+    font-size: 1.5rem !important;
+  }
+
+  .congratzWrapper {
+    padding-left: 33%;
+  }
+
+  .hero {
+    height: 240px;
+    padding-left: 0;
+    /* margin-left: 31%; */
+  }
+
+  .heroTitle {
+    font-size: 1rem;
+    left: 55px;
+  }
+
+  .productImage {
+    max-height: 147px;
+    min-height: 80px;
+  }
+  .productDescription > p {
+    font-size: 1rem;
+  }
+  .buttons > button,
+  .buttons > a {
+    min-width: 9rem;
+    min-height: 9rem;
+  }
+  .buttons > button > div,
+  .buttons > a > div {
+    font-size: 1rem;
+  }
+  .buttons {
+    margin: 10px 0;
+  }
+  .exit > button {
+    min-width: 5rem;
+    min-height: 5rem;
+  }
+  .exit > button > div {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .congratzWrapper {
+    padding-left: 50%;
+  }
+}

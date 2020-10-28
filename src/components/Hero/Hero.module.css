@@ -1,0 +1,111 @@
+:global .errors-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+:global .errors-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+:global .errors-exit {
+  opacity: 1;
+}
+:global .errors-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.wrapper {
+  position: absolute;
+  bottom: 0;
+  max-width: 30rem;
+  max-height: 30rem;
+  width: 100%;
+  /* height: 100%; */
+  z-index: 1000;
+}
+
+.speech {
+  position: absolute;
+  top: -35px;
+  left: -18.5rem;
+  height: 15rem;
+  width: 32rem;
+  background-image: url("../../static/images/speech.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: 1001;
+}
+
+.error {
+  position: relative;
+  top: 10px;
+  font-weight: bold;
+  left: 0;
+  max-height: 120px;
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 5rem;
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  bottom: 0;
+  /* top: 0;
+  left: 0; */
+  right: 0;
+  z-index: -1;
+}
+
+.heroImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1366px) {
+  .speech {
+    height: 12rem;
+    width: 32rem;
+  }
+
+  .error {
+    font-size: 1.5rem;
+  }
+
+  /* .wrapper {
+    max-height: 20rem !important;
+    max-width: 20rem !important;
+    bottom: -35px !important;
+  } */
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    right: -3rem;
+    /* max-height: 20rem !important;
+    max-width: 20rem !important; */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .speech {
+    height: 10rem;
+  }
+  .error {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    max-width: 17rem !important;
+    /* bottom: 15rem !important; */
+    max-height: 17rem !important;
+  }
+}

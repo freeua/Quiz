@@ -1,0 +1,118 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.withMenu {
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.wrapperHero {
+  position: sticky;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.liverContainer {
+  position: relative;
+  padding: 0 3rem;
+  width: 100%;
+}
+
+.window {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 95rem;
+  min-height: calc(100vh - 43rem);
+  background-color: rgba(236, 103, 16, 0.75);
+  border: 2px solid white;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rem;
+}
+
+.content {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  background-color: #ec6710;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 10rem;
+  width: 20rem;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.user {
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+.logout {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+}
+
+@media screen and (max-width: 1230px) {
+  .window {
+    margin-bottom: 20rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapperHero {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .window {
+    max-height: 100%;
+    min-height: 45vh;
+    overflow: hidden;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .liverContainer {
+    padding: 0 2rem;
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/**
+dist/**
+src/index.html
+server
+bin
+config
+scripts
+src/**/__tests__
+src/**/*.test.js
+src/**/*.styled.js
+build

@@ -1,0 +1,143 @@
+.modalWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.modal {
+  background-image: url("../../static/images/Submit-Button.png");
+  width: 37rem;
+  height: 37rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContent {
+  width: 64%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 26px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exit {
+  margin-left: auto;
+  margin-top: 40px;
+  width: fit-content;
+}
+
+.buttonModal {
+  position: relative;
+  background-color: #ffffff;
+  width: 40%;
+  border-top: 1px solid #dc1b14;
+  border-bottom: 1px solid #dc1b14;
+  border-right: 0;
+  border-left: 0;
+  outline: 0;
+  color: #000000;
+  font-size: 2rem;
+  font-family: sans-serif;
+  padding: 8px 0;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin: 5px 0;
+  list-style: none;
+  cursor: pointer;
+  text-decoration: underline;
+  border-radius: 2px;
+}
+
+.buttonModal:after,
+.buttonModal:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #dc1b14;
+  background-color: #fff;
+  transform: scale(0.8, 1.15) rotate(45deg);
+  z-index: 1;
+}
+
+.buttonModal:before {
+  left: -12px;
+  border-top: 0 solid transparent;
+  border-right: 0 solid transparent;
+}
+
+.buttonModal:after {
+  right: -12px;
+  border-bottom: 0 solid transparent;
+  border-left: 0 solid transparent;
+}
+
+.heroImg {
+  position: absolute;
+  bottom: 4.4rem;
+  left: 57%;
+  transform: translate(-48%, 0);
+}
+
+.heroImg > img {
+  max-height: 35vh;
+}
+
+.relative {
+  overflow: hidden;
+  position: relative;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 900px) {
+  .heroImg {
+    left: 60%;
+    bottom: 7rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .heroImg {
+    left: 65%;
+    bottom: 14rem;
+  }
+
+  .heroImg > img {
+    max-height: 36vh;
+  }
+}
+@media screen and (max-height: 700px) {
+  .heroImg {
+    display: none;
+  }
+}

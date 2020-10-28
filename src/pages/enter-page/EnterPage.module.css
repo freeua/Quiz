@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.exit {
+  margin-left: auto;
+  margin-top: 40px;
+  width: fit-content;
+}
+
+.sectionWrapper {
+  width: 100%;
+}

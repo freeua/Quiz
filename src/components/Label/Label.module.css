@@ -1,0 +1,52 @@
+.wrapper {
+  position: relative;
+  background-color: #dc1b14;
+  max-width: 27rem;
+  width: 27rem;
+  text-indent: 20px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: 0;
+  border-left: 0;
+  outline: 0;
+  color: white;
+  font-size: 2.4rem;
+  height: 4rem;
+  font-family: sans-serif;
+  padding-top: 4px;
+  margin-bottom: 2rem;
+
+  border-radius: 3px;
+}
+
+.wrapper:after,
+.wrapper:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  height: 22px;
+  width: 22px;
+  border: 2px solid white;
+  background-color: #dc1b14;
+  transform: scale(0.8, 1.15) rotate(45deg);
+  z-index: 1;
+}
+
+.wrapper:before {
+  left: -11px;
+  border-top: 0 solid transparent;
+  border-right: 0 solid transparent;
+}
+
+.wrapper:after {
+  right: -11px;
+  border-bottom: 0 solid transparent;
+  border-left: 0 solid transparent;
+}
+@media screen and (max-width: 700px) {
+  .wrapper {
+    font-size: 1.8rem;
+    padding-top: 7px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,106 @@
+.progressbarWrapper {
+  margin-bottom: 30px;
+  color: #fff;
+  width: 100%;
+  font-size: 2rem;
+}
+.progressbarWrapper > span {
+  padding-left: 40px;
+}
+.progressbar {
+  position: relative;
+  background-color: #fff;
+  width: 90%;
+  border-top: 2px solid #dc1b14;
+  border-bottom: 2px solid #dc1b14;
+  border-right: 0;
+  border-left: 0;
+  outline: 0;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin: 5px auto;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  height: 4rem;
+}
+
+.progressbar:before,
+.progressbar:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  height: 22px;
+  width: 22px;
+  border: 2px solid #dc1b14;
+  background-color: #fff;
+  transform: scale(1.3, 1.25) rotate(45deg);
+}
+
+.progressbar:before {
+  left: -12px;
+  border-top: 0px solid transparent;
+  border-right: 0px solid transparent;
+  clip-path: polygon(0 100%, 0 0, 0 0, 100% 100%);
+  background-color: #ec6710;
+}
+
+.progressbar:after {
+  right: -12px;
+  border-bottom: 0px solid transparent;
+  border-left: 0px solid transparent;
+  clip-path: polygon(100% 0, 0 0, 0 0, 100% 100%);
+}
+
+.point {
+  width: 60px;
+  height: 100%;
+  position: relative;
+  margin: 0 5px;
+  background: #fff;
+}
+
+.point:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 16px solid transparent;
+  border-bottom: 19px solid transparent;
+  z-index: 10;
+}
+
+.point:after {
+  content: "";
+  position: absolute;
+  right: -19px;
+  bottom: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-top: 18px solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index: 100;
+}
+.fill {
+  background: #ec6710;
+}
+.fill:after {
+  border-left: 20px solid #ec6710;
+}
+
+.point:first-child:before {
+  border-left: 20px solid #ec6710;
+}
+.point:first-child {
+  margin-left: 0;
+}
+.point:last-child {
+  margin-right: 0;
+}
